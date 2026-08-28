@@ -238,7 +238,7 @@ MODEL_PICKER_TRIGGER = (
     "button[aria-haspopup='menu']:has(i.google-symbols:text-is('arrow_drop_down'))"
 )
 VIDEO_MODEL_OPTION_SELECTORS: dict[VideoModel, str] = {
-    VideoModel.OMNI_FLASH: "[role='menuitem']:has-text('Omni Flash')",
+    VideoModel.OMNI_FLASH: "[role='menuitem']:has-text('Omni'):has-text('Flash')",
     VideoModel.VEO_3_1_FAST: "[role='menuitem']:has-text('Veo 3.1 - Fast')",
     VideoModel.VEO_3_1_QUALITY: "[role='menuitem']:has-text('Veo 3.1 - Quality')",
     # Substring `:has-text` (NOT `:text-is`) so it matches regardless of the
